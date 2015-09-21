@@ -1,0 +1,543 @@
+/*************************************************************/
+/*          4-Tell STYLES							         */
+/*************************************************************/
+/* Used to fix problems with PDP1. */
+#ProductTabs {
+    clear: both;
+}
+/* Fixes problem on the VC. */
+.GoogleCheckout, .PayPalExpressCheckout, .AlternativeCheckout, .KeepShopping {
+    clear: right;
+}
+
+#main4TellContainer {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#second4TellContainer {
+    margin: 0;
+    padding: 0;
+    background: none;
+    display: block;
+}
+
+.FourTellContainer {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+    #second4TellContainer:after, #main4TellContainer:after, .FourTellContainer:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+.toutWrapper4T {
+    border: 1px solid gray;
+    background: none;
+}
+
+.product4TCaption {
+    color: #1D3A38;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    /* padding: 0;*/
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.product4TCaptionIE {
+    width: 100%;
+}
+
+.product4T {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    margin: 6px 13px 10px 0px;
+    padding-bottom: 5px;
+    height: 330px;
+    width: 187px;
+    border: none;
+    float: left;
+    clear: none;
+    text-align: left;
+    vertical-align: middle;
+}
+
+    .product4T .productImage {
+        background-color: #ffffff;
+        border: 2px solid #F1EFE6;
+        padding: 4px 0;
+        margin: 0;
+        clear: both !important;
+        float: none !important;
+        width: 96%;
+        height: 187px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .product4T .productImageImg {
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        vertical-align: middle;
+        display: inline;
+    }
+
+    .product4T .ratingImage {
+        float: none !important;
+        clear: both !important;
+    }
+
+    .product4T .ratingImageImg {
+        border: none;
+        vertical-align: middle;
+        display: block;
+        margin: 5px auto;
+        padding: 2px;
+    }
+
+    .product4T .productTitle {
+        color: #1D3A38;
+        height: 4.5em;
+        width: 100%;
+        overflow: hidden;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px 0px;
+    }
+
+    .product4T .productPrice {
+        color: #000;
+        height: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        clear: both !important;
+        float: none !important;
+        margin-top: 3px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .product4T .productSalePrice {
+        color: #000;
+        display: block;
+        height: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        float: none !important;
+        clear: both !important;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .product4T .strikePrice {
+        text-decoration: line-through;
+        color: #FF0000;
+    }
+
+    .product4T .productBuy {
+        clear: both !important;
+        color: #1D3A38;
+        text-align: center;
+        float: none !important;
+        text-decoration: underline;
+    }
+
+/* For scrollables. */
+.scrollable {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+    .scrollable .items {
+        /* this cannot be too large;
+         * must fit ev-ery-thing */
+        width: 20000em;
+        position: absolute;
+        clear: both;
+    }
+
+.items div.scrollGroup, .items div.product4T {
+    float: left;
+}
+
+/* For the buttons. */
+a.browse {
+    background: url(../images/hori_large.png) no-repeat;
+    display: block;
+    width: 15px;
+    height: 18px;
+    float: left;
+    margin: 100px 0px;
+    cursor: pointer;
+    font-size: 1px;
+}
+
+a.home {
+    color: #1D3A38;
+    text-decoration: none;
+}
+
+    a.home:hover {
+        text-decoration: underline;
+    }
+
+a.right {
+    background-position: 0 -30px;
+    clear: right;
+    margin-right: 0px;
+}
+
+a.left {
+    background-position: 0 0;
+    margin-left: 10px;
+}
+
+a.disabled {
+    visibility: hidden !important;
+}
+
+.product4T .productTitle a:hover {
+    text-decoration: underline;
+}
+
+/* Here follows custom classes, so as to permit each page to have its own
+* custom CSS. */
+
+/* Tout1 on PD page. */
+.product4TCaptionPD1 {
+    font-size: 10px;
+}
+
+#PD1Wrap {
+    float: left;
+    margin: 10px auto;
+    width: 100%;
+    clear: both;
+}
+
+.product4TPD1 {
+    background: transparent;
+    height: auto;
+    margin: 0 12px;
+    padding: 6px 0;
+    width: 150px;
+}
+
+    .product4TPD1 + .product4TPD1 {
+        border-top: 1px solid #F1EFE6;
+    }
+
+    .product4TPD1 .productImage {
+        height: auto;
+    }
+
+    .product4TPD1 .productImageImg {
+    }
+
+    .product4TPD1 .productTitle {
+        height: auto;
+    }
+
+    .product4TPD1 .ratingImage {
+    }
+
+    .product4TPD1 .ratingImageImg {
+    }
+
+    .product4TPD1 .productSalePrice {
+        height: auto;
+    }
+
+    .product4TPD1 .productPrice {
+        height: auto;
+    }
+
+    .product4TPD1 .productBuy {
+    }
+
+/* Tout2 on PD page */
+.product4TCaptionPD2 {
+}
+
+.product4TPD2 {
+    width: 170px;
+}
+
+    .product4TPD2 + .product4TPD2 {
+    }
+
+    .product4TPD2 .productImage {
+    }
+
+    .product4TPD2 .productImageImg {
+    }
+
+    .product4TPD2 .productTitle {
+    }
+
+        .product4TPD2 .productTitle:hover {
+            text-decoration: underline;
+        }
+
+    .product4TPD2 .ratingImage {
+    }
+
+    .product4TPD2 .ratingImageImg {
+    }
+
+    .product4TPD2 .productSalePrice {
+    }
+
+    .product4TPD2 .productPrice {
+    }
+
+    .product4TPD2 .productBuy {
+    }
+
+/* Tout on the home page. */
+.product4TCaptionHome {
+}
+
+.product4THome {
+}
+
+    .product4THome + .product4THome {
+    }
+
+    .product4THome .productImage {
+    }
+
+    .product4THome .productImageImg {
+    }
+
+    .product4THome .productTitle {
+    }
+
+    .product4THome .ratingImage {
+    }
+
+    .product4THome .ratingImageImg {
+    }
+
+    .product4THome .productSalePrice {
+    }
+
+    .product4THome .productPrice {
+    }
+
+
+    .product4THome .productBuy {
+    }
+
+/* Category pages */
+.product4TCaptionCat {
+}
+
+.product4TCat {
+}
+
+    .product4TCat .productImage {
+    }
+
+    .product4TCat .productImageImg {
+    }
+
+    .product4TCat .productTitle {
+    }
+
+    .product4TCat .ratingImage {
+    }
+
+    .product4TCat .ratingImageImg {
+    }
+
+    .product4TCat .productSalePrice {
+    }
+
+    .product4TCat .productPrice {
+    }
+
+
+    .product4TCat .productBuy {
+    }
+
+/* Search */
+.product4TCaptionSearch {
+}
+
+.product4TSearch {
+}
+
+    .product4TSearch + .product4TSearch {
+    }
+
+    .product4TSearch .productImage {
+    }
+
+    .product4TSearch .productImageImg {
+    }
+
+    .product4TSearch .productTitle {
+    }
+
+    .product4TSearch .ratingImage {
+    }
+
+    .product4TSearch .ratingImageImg {
+    }
+
+    .product4TSearch .productSalePrice {
+    }
+
+    .product4TSearch .productPrice {
+    }
+
+
+    .product4TSearch .productBuy {
+    }
+
+/* View Cart */
+.product4TCaptionVC {
+    font-size: 11px;
+}
+
+.product4TVC {
+    margin: 6px 6px 10px;
+    width: 160px;
+}
+
+    .product4TVC + .product4TVC {
+    }
+
+    .product4TVC .productImage {
+    }
+
+    .product4TVC .productImageImg {
+    }
+
+    .product4TVC .productTitle {
+    }
+
+    .product4TVC .ratingImage {
+    }
+
+    .product4TVC .ratingImageImg {
+    }
+
+    .product4TVC .productSalePrice {
+    }
+
+    .product4TVC .productPrice {
+    }
+
+    .product4TVC .productBuy {
+    }
+
+/* Checkout */
+.product4TCaptionCheck {
+}
+
+.product4TCheck {
+}
+
+    .product4TCheck .productImage {
+    }
+
+    .product4TCheck .productImageImg {
+    }
+
+    .product4TCheck .productTitle {
+    }
+
+    .product4TCheck .ratingImage {
+    }
+
+    .product4TCheck .ratingImageImg {
+    }
+
+    .product4TCheck .productSalePrice {
+    }
+
+    .product4TCheck .productPrice {
+    }
+
+
+    .product4TCheck .productBuy {
+    }
+
+/* Quick Cart */
+.product4TCaptionQC {
+}
+
+.product4TQC {
+}
+
+    .product4TQC .productImage {
+    }
+
+    .product4TQC .productImageImg {
+    }
+
+    .product4TQC .productTitle {
+    }
+
+    .product4TQC .ratingImage {
+    }
+
+    .product4TQC .ratingImageImg {
+    }
+
+    .product4TQC .productSalePrice {
+    }
+
+    .product4TQC .productPrice {
+    }
+
+
+    .product4TQC .productBuy {
+    }
+
+/* Quick view */
+.product4TCaptionQV {
+}
+
+.product4TQV {
+}
+
+    .product4TQV .productImage {
+    }
+
+    .product4TQV .productImageImg {
+    }
+
+    .product4TQV .productTitle {
+    }
+
+    .product4TQV .ratingImage {
+    }
+
+    .product4TQV .ratingImageImg {
+    }
+
+    .product4TQV .productSalePrice {
+    }
+
+    .product4TQV .productPrice {
+    }
+
+
+    .product4TQV .productBuy {
+    }
+
