@@ -16,7 +16,7 @@
         },
         PageSettings: {
             Home: [{
-                enable: false
+                enable: jlkjl
             }],
             ProductDetail: [{
                 enable: true,
