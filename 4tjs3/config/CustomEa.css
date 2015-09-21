@@ -1,0 +1,505 @@
+/*************************************************************/
+/* 4-Tell STYLES */
+/*************************************************************/
+/* default state */
+
+.state-indicator {
+    color: transparent;
+    position: absolute;
+    top: -999em;
+    left: -999em;
+    z-index: 1;
+}
+/* desktop */
+
+@media only screen and (min-width: 768px) and (max-width: 1139px) {
+    .state-indicator {
+        z-index: 2;
+    }
+}
+/* tablet */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .state-indicator {
+        z-index: 3;
+    }
+}
+/* mobile */
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+    .state-indicator {
+        z-index: 4;
+    }
+}
+/* custom */
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+    .toutWrapper4T.PD14T.ProductDetail1 {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+#main4TellContainer {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+#second4TellContainer {
+    margin: 0;
+    padding: 0;
+    background: none;
+    display: block;
+}
+.FourTellContainer {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.FourTellContainer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.toutWrapper4T {
+    margin: 5px 0;
+}
+.product4TCaption {
+    color: #333333;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: inherit;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 1px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+.product4T {
+    background-color: transparent;
+    margin: 5px;
+    padding: 0;
+    width: 120px;
+    border: none;
+    float: left;
+    clear: none;
+    text-align: center;
+    vertical-align: middle;
+}
+.product4T .productImage {
+    padding: 10px 0;
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 130px;
+    position: relative;
+}
+.product4T .productImageImg {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    vertical-align: middle;
+    display: inline;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    width: auto;
+    height: auto;
+    border: none;
+}
+.product4T .ratingImage {
+    float: none;
+    clear: both;
+}
+.product4T .ratingImageImg {
+    border: none;
+    vertical-align: middle;
+    display: inline;
+    padding: 2px;
+}
+.product4T .productTitle {
+    height: 4.6em;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    font-weight: bold;
+    font: 900 16px "Open Sans", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+.product4T .productPrice {
+    clear: both;
+    float: none;
+    font-weight: bold;
+    color: #D20000;
+    font-size: 16px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.product4T .productSalePrice {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    height: 1.2em;
+    font-size: 13px;
+    font-weight: bold;
+    float: none;
+    clear: both;
+}
+.product4T .strikePrice {
+    text-decoration: line-through;
+    color: grey;
+}
+.product4T .productBuy {
+    margin: 0 0 10px;
+    text-decoration: none;
+}
+.product4T .productBuy div {
+    width: 96px;
+    margin: auto;
+    background: black;
+    color: white;
+    padding: 1px, 10px, 1px, 10px;
+    font: 10px "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    border: 0px;
+}
+.product4T .productBuy div:hover {
+    cursor: pointer;
+}
+/* For scrollables. */
+/* * Core Owl Carousel CSS File * v1.3.3 */
+/* clearfix */
+
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border: 1px solid #eeeeee;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+    float: left;
+    border-right: 1px solid #eeeeee;
+}
+.owl-carousel .owl-item:last-of-type {
+    border-right: 0px;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+    cursor: pointer;
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+
+.grabbing {
+    cursor: url(grabbing.png) 8 8, move;
+}
+/* fix */
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+}
+.FourTellContainer .owl-controls {
+    z-index: 11;
+    position: absolute;
+    left: 0;
+    /*top: 40%;*/
+   
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+.FourTellContainer .owl-controls .owl-buttons div {
+    display: block !important;
+    -webkit-border-radius: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 15px !important;
+    height: 18px !important;
+}
+.FourTellContainer .owl-controls .owl-buttons .owl-next {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAwCAMAAAD5JNAAAAAAqFBMVEX///+wsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLG4mILSAAAAN3RSTlMAAQIDCAkLEhMaIiorLTg9QENHTlZcX2JkZn2Bg4uhpaetuL/Fx87Y3N7h6Onq7PL0+fr7/P3+pwOaKAAAAMhJREFUeF7d0EeywkAMRdE2tsGRnKOJDmTa9Nv/zj71B2ppwAa4szORqp6iGr21YjXHp4uVGy9z1ES/vQGs/UEBa7e1Ohuy4/WzG0COZgeAeQIID6uncNDJHsb6UzLPDfm/6VELq3R3F1bh4qrxVrZgtH9pxetuSwva4xda9xrC5bYrrF/7UcD8hr4uQusawH2XCkMfp8Iw+TzhhnlknYAZeFZDYWAifJhFzLes7zlkc161XHa/GPj8/6b9ITlfxq6iLqdx89sef8r8Ldm5n+0eAAAAAElFTkSuQmCC') no-repeat !important;
+    background-position-x: 0px !important;
+    background-position-y: -30px !important;
+    position: absolute !important;
+    right: 0px;
+    top: 100px;
+    float: right;
+}
+.FourTellContainer .owl-controls .owl-buttons .owl-prev {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAwCAMAAAD5JNAAAAAAqFBMVEX///+wsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLG4mILSAAAAN3RSTlMAAQIDCAkLEhMaIiorLTg9QENHTlZcX2JkZn2Bg4uhpaetuL/Fx87Y3N7h6Onq7PL0+fr7/P3+pwOaKAAAAMhJREFUeF7d0EeywkAMRdE2tsGRnKOJDmTa9Nv/zj71B2ppwAa4szORqp6iGr21YjXHp4uVGy9z1ES/vQGs/UEBa7e1Ohuy4/WzG0COZgeAeQIID6uncNDJHsb6UzLPDfm/6VELq3R3F1bh4qrxVrZgtH9pxetuSwva4xda9xrC5bYrrF/7UcD8hr4uQusawH2XCkMfp8Iw+TzhhnlknYAZeFZDYWAifJhFzLes7zlkc161XHa/GPj8/6b9ITlfxq6iLqdx89sef8r8Ldm5n+0eAAAAAElFTkSuQmCC') no-repeat !important;
+    background-position: 0 0;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    float: left;
+}
+.FourTellContainer {
+    .owl-carousel .owl-item {
+        float: left;
+        .product4T {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .owl-controls {
+        z-index: 11;
+        position: absolute;
+        left: 0;
+        /*top: 40%;*/
+       
+        top: 0;
+        height: auto;
+        width: 100%;
+        .owl-buttons div {
+            display: block !important;
+            -webkit-border-radius: 0px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            width: 15px !important;
+            height: 18px !important;
+        }
+        .owl-next {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAwCAMAAAD5JNAAAAAAqFBMVEX///+wsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLG4mILSAAAAN3RSTlMAAQIDCAkLEhMaIiorLTg9QENHTlZcX2JkZn2Bg4uhpaetuL/Fx87Y3N7h6Onq7PL0+fr7/P3+pwOaKAAAAMhJREFUeF7d0EeywkAMRdE2tsGRnKOJDmTa9Nv/zj71B2ppwAa4szORqp6iGr21YjXHp4uVGy9z1ES/vQGs/UEBa7e1Ohuy4/WzG0COZgeAeQIID6uncNDJHsb6UzLPDfm/6VELq3R3F1bh4qrxVrZgtH9pxetuSwva4xda9xrC5bYrrF/7UcD8hr4uQusawH2XCkMfp8Iw+TzhhnlknYAZeFZDYWAifJhFzLes7zlkc161XHa/GPj8/6b9ITlfxq6iLqdx89sef8r8Ldm5n+0eAAAAAElFTkSuQmCC') no-repeat !important;
+            background-position-x: 0px !important;
+            background-position-y: -30px !important;
+            position: absolute !important;
+            right: 0px;
+            top: 100px;
+            float: right;
+        }
+        .owl-prev {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAwCAMAAAD5JNAAAAAAqFBMVEX///+wsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLG4mILSAAAAN3RSTlMAAQIDCAkLEhMaIiorLTg9QENHTlZcX2JkZn2Bg4uhpaetuL/Fx87Y3N7h6Onq7PL0+fr7/P3+pwOaKAAAAMhJREFUeF7d0EeywkAMRdE2tsGRnKOJDmTa9Nv/zj71B2ppwAa4szORqp6iGr21YjXHp4uVGy9z1ES/vQGs/UEBa7e1Ohuy4/WzG0COZgeAeQIID6uncNDJHsb6UzLPDfm/6VELq3R3F1bh4qrxVrZgtH9pxetuSwva4xda9xrC5bYrrF/7UcD8hr4uQusawH2XCkMfp8Iw+TzhhnlknYAZeFZDYWAifJhFzLes7zlkc161XHa/GPj8/6b9ITlfxq6iLqdx89sef8r8Ldm5n+0eAAAAAElFTkSuQmCC') no-repeat !important;
+            background-position: 0 0;
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            float: left;
+        }
+    }
+}
+/* Quite necessary; customize to fit. */
+
+.items .scrollGroup,
+.items .product4T {
+    float: left;
+}
+/* For the buttons. */
+
+a.browse {
+    background: url(../images/hori_large.png) no-repeat;
+    display: block;
+    width: 15px;
+    height: 18px;
+    float: left;
+    margin: 100px 0 0;
+    cursor: pointer;
+    font-size: 1px;
+}
+a.right {
+    background-position: 0 -30px;
+    clear: right;
+    margin-right: 10px;
+}
+a.left {
+    background-position: 0 0;
+    margin-left: 10px;
+}
+a.disabled {
+    visibility: hidden !important;
+}
+/* Here follows custom classes, so as to permit each page to have its own * custom CSS. */
+/* Tout1 on PD page. */
+
+.product4TCaptionPD1 {} .ProductDetail1 {
+    float: right;
+    width: 528px;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.ProductDetail1 .FourTellContainer {
+    margin-bottom: 0px;
+}
+.product4TPD1 {
+    margin: auto;
+    float: none;
+    width: 98%;
+}
+.product4TPD1 + .product4TPD1 {
+    border-left: 1px dotted #DDD;
+}
+.product4TPD1 .productImage {
+    height: 140px;
+}
+.product4TPD1 .productImageImg {} .product4TPD1 .productTitle {} .product4TPD1 .ratingImage {} .product4TPD1 .ratingImageImg {} .product4TPD1 .productSalePrice {} .product4TPD1 .productPrice {} .product4TPD1 .productBuy {} @media only screen and (max-width: 1200px) {}
+/* Tout2 on PD page */
+
+.ProductDetail2 .FourTellContainer {
+    width: 100%;
+}
+.PD24T {
+    table-layout: fixed;
+}
+.product4TCaptionPD2 {} .product4TPD2 {
+    width: 100%;
+    margin: 4px;
+    padding: 5px 10px;
+    margin: auto;
+    float: none;
+}
+.product4TPD2 + .product4TPD2 {
+    border-left: 1px dotted #DDD;
+}
+.product4TPD2 .productImage {
+    height: 211px;
+    ;
+}
+.product4TPD2 .productImageImg {} .product4TPD2 .productTitle {} .product4TPD2 .ratingImage {} .product4TPD2 .ratingImageImg {} .product4TPD2 .productSalePrice {} .product4TPD2 .productPrice {} .product4TPD2 .productBuy {}
+/* Tout3 on PD page */
+
+.ProductDetail3 {
+    float: right;
+    width: 528px;
+    display: inline-block;
+    margin-top: 0px;
+}
+.ProductDetail3 .FourTellContainer {
+    margin-top: 0px;
+}
+.ProductDetail3 .FourTellContainer .owl-wrapper-outer {
+    border-top: 0px;
+}
+.product4TPD3 {
+    margin: auto;
+    float: none;
+    width: 98%;
+}
+.product4TPD3 + .product4TPD3 {
+    border-left: 1px dotted #DDD;
+}
+.product4TPD3 .productImage {
+    height: 140px;
+}
+.ProductDetail3 .product4TCaption {
+    display: none;
+}
+@media only screen and (max-width: 1200px) {
+    .ProductDetail3 {
+        display: none;
+    }
+}
+/* Tout on the home page. */
+
+.product4TCaptionHome {} #HOME4T {
+    margin: 5px 0;
+    border: 1px solid #DDD;
+}
+#HOME4T a.browse {
+    margin-top: 40%;
+}
+.product4THome {
+    padding: 0 3px;
+}
+.product4THome + .product4THome {} .product4THome .productImage {} .product4THome .productImageImg {} .product4THome .productTitle {
+    height: 8em;
+}
+.product4THome .ratingImage {} .product4THome .ratingImageImg {} .product4THome .productSalePrice {} .product4THome .productPrice {} .product4THome .productBuy {}
+/* Category pages */
+
+.toutWrapper4T.Category1 {
+    table-layout: fixed;
+}
+.product4TCaptionCat {} .product4TCat {
+    padding: 5px;
+    width: 100%;
+    float: none;
+    margin: auto;
+}
+.product4TCat .productImage {} .product4TCat .productImageImg {} .product4TCat .productTitle {
+    height: 2.6em;
+}
+.product4TCat .ratingImage {} .product4TCat .ratingImageImg {} .product4TCat .productSalePrice {} .product4TCat .productPrice {} .product4TCat .productBuy {}
+/* View Cart */
+
+.toutWrapper4T.AddToCart1 {
+    table-layout: fixed;
+}
+.product4TCaptionVC {
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    color: black;
+    clear: both;
+}
+.product4TVC {
+    margin: 4px;
+    padding: 0 4px;
+    width: 100%;
+    margin: auto;
+    float: none;
+}
+.product4TVC + .product4TVC {
+    border-left: 1px dotted #DDD;
+}
+.product4TVC .productImage {
+    height: 115px;
+}
+.product4TVC .productImageImg {} .product4TVC .productTitle {
+    height: 2em;
+}
+.product4TVC .ratingImage {} .product4TVC .ratingImageImg {} .product4TVC .productSalePrice {} .product4TVC .productPrice {} .product4TVC .productBuy {}
+
